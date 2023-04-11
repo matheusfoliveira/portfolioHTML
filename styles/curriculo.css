@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;;
+    --cor-hover: #3F4E4F;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +18,8 @@
 body {
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color:black;
-    color: #f6f6f6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -22,10 +32,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -34,10 +44,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;    
+    gap: 82px;
 }
 
 .curriculo__formatacao{
-    width: 800px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -45,43 +56,43 @@ body {
 
 .curriculo__meunome {
     font-family: 'Krona One', sans-serif;
-    font-size: 24px;
-    color: #f6f6f6;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
 }
 
 .curriculo__texto {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #f6f6f6;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
 }
 
 .curriculo__subtitulo {
     font-family: 'Krona One', sans-serif;
-    font-size: 20px;
-    color: #f6f6f6;
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
 }
 
 .curriculo__lista__titulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #f6f6f6;
+    font-size: 1.7rem;
+    color: var(--cor-secundaria);
     font-weight: bold;
     list-style: square;
 }
 
 .curriculo__lista {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #f6f6f6;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
     list-style: none;
     font-weight: none;
 }
 
 .rodape {
     padding: 24px;
-    color: black;
-    background-color: #22D4FD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
 }
